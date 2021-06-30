@@ -10,7 +10,7 @@ pipeline {
       steps {
         git 'https://github.com/pkamalakannanp/cicd-java-db-demo.git'
         script{
-                 bat "mvn clean package"
+                 bat 'mvn clean package'
          }
       }
     }
