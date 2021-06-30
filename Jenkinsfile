@@ -10,8 +10,7 @@ pipeline {
       steps {
         git 'https://github.com/pkamalakannanp/cicd-java-db-demo.git'
         script{
-                 def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
-                 bat "${mvnHome}/usr/local/pictolearn/mvn clean package"
+                 bat "mvn clean package"
          }
       }
     }
